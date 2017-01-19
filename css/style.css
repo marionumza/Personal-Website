@@ -1,0 +1,83 @@
+html{
+	background-color: #0F2539;
+/*	animation-name: background-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;*/
+}
+
+
+
+
+body{
+	padding: 0px 100px; 
+	margin: 0px 25% 0px 25%;
+	border-left: 2px solid #0060BF;
+	border-right: 2px solid #0060BF;
+}
+
+.blue{
+	color: #0060BF;
+}
+
+.white{
+	color: #F4F4F5;
+}
+
+.content{
+	text-align: center;
+	margin: auto;
+	height: 100%;
+}
+
+.header{
+	padding-top: 3em;
+	height: 16vmax;
+	display: inline-block;
+}
+
+.row{
+	padding-bottom: 3em;
+	height: 100px;
+	display: inline-block;
+}
+
+.item{
+	font-family: 'Signika', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+
+	font-weight: 300;
+	font-size: 6em;
+	font-size: 2.9vw;
+	color: #F4F4F5;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+hr{
+	margin-top: 2em;
+	border-top: 1px solid dark-gray;
+	width: 50%;
+}
+
+#badge{
+	background-color: #0F2539;
+	transition: all 0.3s ease-out;
+
+	width: 50%;
+	height: auto;
+}
+
+#badge:hover{
+	background: linear-gradient(#0F263A,#0A1622);
+	border-radius: 5px;
+	box-shadow: 1px 2px 10px 3px black;
+	width: 55%;
+}
+
+#badge:active{
+	width: 48%;
+	box-shadow: none;
+	background: linear-gradient(#0A1622,#0F263A);
+
+}
