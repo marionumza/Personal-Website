@@ -1,13 +1,13 @@
 /*Tablet*/
 @media only screen and (min-width: 600px) {
   body {
-    background-color: #0f2539;
+    background-color: #0F2539;
     padding: 0px 100px;
     margin: 0px 10vw 0px 10vw;
-    border-left: 2px solid #0060bf;
-    border-right: 2px solid #0060bf; }
+    border-left: 2px solid #0060BF;
+    border-right: 2px solid #0060BF; }
 
-  .header {
+  header {
     padding-top: 3em;
     padding-bottom: 6em;
     height: 16vmax;
@@ -22,13 +22,13 @@
 /*Desktop*/
 @media only screen and (min-width: 1280px) {
   body {
-    background-color: #0f2539;
+    background-color: #0F2539;
     padding: 0px 100px;
     margin: 0px 25vw 0px 25vw;
-    border-left: 2px solid #0060bf;
-    border-right: 2px solid #0060bf; }
+    border-left: 2px solid #0060BF;
+    border-right: 2px solid #0060BF; }
 
-  .header {
+  header {
     padding-top: 3em;
     padding-bottom: 1em;
     height: 16vmax;
@@ -41,7 +41,7 @@
     color: #F4F4F5;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } }
 .blue {
-  color: #0060bf; }
+  color: #0060BF; }
 
 .white {
   color: #F4F4F5; }
@@ -62,13 +62,18 @@ hr {
 
 #badge {
   background-color: #0F2539;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   width: 50%;
   height: auto; }
 
 #badge:hover {
-  background: linear-gradient(#0f2539, #0a1622);
+  background: -webkit-linear-gradient(#0F2539, #0A1622);
+  background: linear-gradient(#0F2539, #0A1622);
   border-radius: 5px;
   box-shadow: 1px 2px 10px 3px black;
   width: 55%; }
@@ -76,5 +81,8 @@ hr {
 #badge:active {
   width: 48%;
   box-shadow: none;
-  background: linear-gradient(#0a1622, #0f2539);
+  background: -webkit-linear-gradient(#0A1622, #0F2539);
+  background: linear-gradient(#0A1622, #0F2539);
   border: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */

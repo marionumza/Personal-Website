@@ -1,3 +1,5 @@
+@import "bourbon/_bourbon.scss";
+
 $black-blue:#0A1622;
 $light-blue: #0F2539;
 $highlight-blue:#0060BF;
@@ -12,7 +14,7 @@ $highlight-blue:#0060BF;
 		border-right: 2px solid $highlight-blue;
 	}
 
-	.header {
+	header {
 		padding-top: 3em;		
 		padding-bottom: 6em;
 		height: 16vmax;
@@ -39,7 +41,7 @@ $highlight-blue:#0060BF;
 		border-right: 2px solid $highlight-blue;
 	}
 
-	.header {
+	header {
 		padding-top: 3em;
 		padding-bottom: 1em;
 		height: 16vmax;
@@ -83,14 +85,14 @@ hr {
 
 #badge {
 	background-color: #0F2539;
-	transition: all 0.3s ease-out;
-	transition-timing-function: ease-in-out;
+	@include transition (all 0.3s ease-out);
+	@include transition-timing-function(ease-in-out);
 	width: 50%;
 	height: auto;
 }
 
 #badge:hover {
-	background: linear-gradient($light-blue, $black-blue);
+	@include background(linear-gradient($light-blue, $black-blue));
 	border-radius: 5px;
 	box-shadow: 1px 2px 10px 3px black;
 	width: 55%;
@@ -99,6 +101,6 @@ hr {
 #badge:active {
 	width: 48%;
 	box-shadow: none;
-	background: linear-gradient($black-blue, $light-blue);
+	@include background(linear-gradient($black-blue, $light-blue));
 	border: 1px solid black;
 }
