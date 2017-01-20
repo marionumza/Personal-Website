@@ -46,13 +46,17 @@
 .white {
   color: #F4F4F5; }
 
+.box {
+  border: 1px solid black;
+  width: 100%; }
+
 .content {
   text-align: center;
   margin: auto; }
 
 .row {
-  padding-bottom: 3em;
-  height: 100px;
+  margin-bottom: 2em;
+  height: 150px;
   display: inline-block; }
 
 hr {
@@ -84,5 +88,39 @@ hr {
   background: -webkit-linear-gradient(#0A1622, #0F2539);
   background: linear-gradient(#0A1622, #0F2539);
   border: 1px solid black; }
+
+#aurora {
+  background-image: url("/Images/aurora.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #252F3D; }
+
+#journaley {
+  background-image: url("/Images/journaley.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #191919; }
+
+#icarus {
+  background-image: url("/Images/icarus.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #2A2A2A; }
+
+#peruse {
+  background-image: url("/Images/Peruse.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #FFF1C2; }
+
+#neo {
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */

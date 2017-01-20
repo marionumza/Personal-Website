@@ -1,13 +1,12 @@
 @import "bourbon/_bourbon.scss";
-
-$black-blue:#0A1622;
+$black-blue: #0A1622;
 $light-blue: #0F2539;
-$highlight-blue:#0060BF;
+$highlight-blue: #0060BF;
 
 /*Tablet*/
 @media only screen and (min-width:600px) {
 	body {
-		background-color:$light-blue;
+		background-color: $light-blue;
 		padding: 0px 100px;
 		margin: 0px 10vw 0px 10vw;
 		border-left: 2px solid $highlight-blue;
@@ -15,7 +14,7 @@ $highlight-blue:#0060BF;
 	}
 
 	header {
-		padding-top: 3em;		
+		padding-top: 3em;
 		padding-bottom: 6em;
 		height: 16vmax;
 		display: inline-block;
@@ -34,7 +33,7 @@ $highlight-blue:#0060BF;
 /*Desktop*/
 @media only screen and (min-width:1280px) {
 	body {
-		background-color:$light-blue;
+		background-color: $light-blue;
 		padding: 0px 100px;
 		margin: 0px 25vw 0px 25vw;
 		border-left: 2px solid $highlight-blue;
@@ -66,14 +65,19 @@ $highlight-blue:#0060BF;
 	color: #F4F4F5;
 }
 
+.box {
+	border: 1px solid black;
+	width: 100%;
+}
+
 .content {
 	text-align: center;
 	margin: auto;
 }
 
 .row {
-	padding-bottom: 3em;
-	height: 100px;
+	margin-bottom: 2em;
+	height: 150px;
 	display: inline-block;
 }
 
@@ -103,4 +107,49 @@ hr {
 	box-shadow: none;
 	@include background(linear-gradient($black-blue, $light-blue));
 	border: 1px solid black;
+}
+
+$aurora-color: #252F3D;
+$journaley-color:#191919;
+$icarus-color: #2A2A2A;
+$peruse-color: #FFF1C2;
+$neo-color: white;
+#aurora {
+	background-image: url("/Images/aurora.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $aurora-color;
+}
+
+#journaley {
+	background-image: url("/Images/journaley.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $journaley-color;
+}
+
+#icarus {
+	background-image: url("/Images/icarus.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $icarus-color;
+}
+
+#peruse {
+	background-image: url("/Images/Peruse.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $peruse-color;
+}
+
+#neo {
+	// background-image: url("/Images/Peruse.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $neo-color;
 }
