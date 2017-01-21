@@ -2,12 +2,52 @@
 $black-blue: #0A1622;
 $light-blue: #0F2539;
 $highlight-blue: #0060BF;
+//Phone
+$body-padding: 10px;
+$row-height: 90px;
+$row-bottom-margin: 1em;
+$header-height: 15em;
+
+body {
+	background-color: $light-blue;
+	padding: 0px $body-padding;
+	margin: 0px 1vw 0px 1vw;
+	border-left: 2px solid $highlight-blue;
+	border-right: 2px solid $highlight-blue;
+}
+
+header {
+	padding-top: 3em;
+	height: $header-height;
+	padding-bottom: 2em;
+	display: inline-block;
+}
+
+.item {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10px;
+	font-size: 5vw;
+	color: #F4F4F5;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+	margin-bottom: $row-bottom-margin;
+	height: $row-height;
+	width: 100%;
+	display: inline-block;
+}
 
 /*Tablet*/
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:500px) {
+	$body-padding: 50px;
+	$row-height: 120px;
+	$row-bottom-margin: 2em;
+	$header-height: 15em;
+
 	body {
 		background-color: $light-blue;
-		padding: 0px 100px;
+		padding: 0px $body-padding;
 		margin: 0px 10vw 0px 10vw;
 		border-left: 2px solid $highlight-blue;
 		border-right: 2px solid $highlight-blue;
@@ -15,8 +55,8 @@ $highlight-blue: #0060BF;
 
 	header {
 		padding-top: 3em;
-		padding-bottom: 6em;
-		height: 16vmax;
+		padding-bottom: 2em;
+		height: $header-height;
 		display: inline-block;
 	}
 
@@ -28,13 +68,25 @@ $highlight-blue: #0060BF;
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 
+	.row {
+		margin-bottom: $row-bottom-margin;
+		height: $row-height;
+		width: 100%;
+		display: inline-block;
+	}
+
 }
 
 /*Desktop*/
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:1000px) {
+	$body-padding: 50px;
+	$row-height: 8vw;
+	$row-bottom-margin: 2em;
+	$header-height: 20vmax;
+
 	body {
 		background-color: $light-blue;
-		padding: 0px 100px;
+		padding: 0px $body-padding;
 		margin: 0px 25vw 0px 25vw;
 		border-left: 2px solid $highlight-blue;
 		border-right: 2px solid $highlight-blue;
@@ -42,8 +94,8 @@ $highlight-blue: #0060BF;
 
 	header {
 		padding-top: 3em;
-		padding-bottom: 1em;
-		height: 16vmax;
+		padding-bottom: 0.5vw;
+		height: $header-height;
 		display: inline-block;
 	}
 
@@ -53,6 +105,13 @@ $highlight-blue: #0060BF;
 		font-size: 2.9vw;
 		color: #F4F4F5;
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.row {
+		margin-bottom: $row-bottom-margin;
+		height: $row-height;
+		width: 100%;
+		display: inline-block;
 	}
 
 }
@@ -65,20 +124,9 @@ $highlight-blue: #0060BF;
 	color: #F4F4F5;
 }
 
-.box {
-	border: 1px solid black;
-	width: 100%;
-}
-
 .content {
 	text-align: center;
 	margin: auto;
-}
-
-.row {
-	margin-bottom: 2em;
-	height: 150px;
-	display: inline-block;
 }
 
 hr {
@@ -89,31 +137,48 @@ hr {
 
 #badge {
 	background-color: #0F2539;
-	@include transition (all 0.3s ease-out);
-	@include transition-timing-function(ease-in-out);
+	@include transition (all 2s ease-out);
+	@include transition-timing-function($ease-out-circ);
 	width: 50%;
-	height: auto;
 }
 
 #badge:hover {
+	@include transform(scale(1.09));
 	@include background(linear-gradient($light-blue, $black-blue));
 	border-radius: 5px;
 	box-shadow: 1px 2px 10px 3px black;
-	width: 55%;
 }
 
 #badge:active {
-	width: 48%;
-	box-shadow: none;
+	@include transform(scale(1));
 	@include background(linear-gradient($black-blue, $light-blue));
+	box-shadow: none;
 	border: 1px solid black;
 }
 
 $aurora-color: #252F3D;
-$journaley-color:#191919;
+$journaley-color: #191919;
 $icarus-color: #2A2A2A;
 $peruse-color: #FFF1C2;
 $neo-color: white;
+
+.button {
+	@include transition (all 1.5s ease-out);
+	@include transition-timing-function($ease-out-circ);
+	border: 1px solid black;
+	width: 100%;
+}
+
+.button:hover {
+	box-shadow: 1px 2px 6px 1px black;
+	@include transform(scale(1.02));
+}
+
+.button:active {
+	box-shadow: 0px 0px 0px 1px black;
+	@include transform(scale(0.95));
+}
+
 #aurora {
 	background-image: url("/Images/aurora.png");
 	background-position: center, center;
@@ -147,7 +212,7 @@ $neo-color: white;
 }
 
 #neo {
-	// background-image: url("/Images/Peruse.png");
+	background-image: url("/Images/neo.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
