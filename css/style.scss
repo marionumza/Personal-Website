@@ -2,14 +2,14 @@
 $black-blue: #0A1622;
 $light-blue: #0F2539;
 $highlight-blue: #0060BF;
-//Phone
+$background-url: "/Images/diamond.png";
+// Phone
 $body-padding: 10px;
 $row-height: 90px;
 $row-bottom-margin: 1em;
 $header-height: 15em;
 
 body {
-	background-color: $light-blue;
 	padding: 0px $body-padding;
 	margin: 0px 1vw 0px 1vw;
 	border-left: 2px solid $highlight-blue;
@@ -46,7 +46,6 @@ header {
 	$header-height: 15em;
 
 	body {
-		background-color: $light-blue;
 		padding: 0px $body-padding;
 		margin: 0px 10vw 0px 10vw;
 		border-left: 2px solid $highlight-blue;
@@ -85,7 +84,6 @@ header {
 	$header-height: 20vmax;
 
 	body {
-		background-color: $light-blue;
 		padding: 0px $body-padding;
 		margin: 0px 25vw 0px 25vw;
 		border-left: 2px solid $highlight-blue;
@@ -116,6 +114,28 @@ header {
 
 }
 
+// Global
+body {
+	background: $light-blue url($background-url) repeat 0 0;
+	@include animation-name(moveBg);
+	@include animation-duration(50s);
+	@include animation-timing-function(linear);
+	@include animation-iteration-count(infinite);
+	@include animation-direction(normal);
+	@include transition (all 2s $ease-out-circ);
+}
+
+@include keyframes(moveBg) {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 0 100%;
+	}
+
+}
+
 .blue {
 	color: $highlight-blue;
 }
@@ -127,6 +147,27 @@ header {
 .content {
 	text-align: center;
 	margin: auto;
+	@include animation-name(animateContent);
+	@include animation-iteration-count(1);
+	@include animation-direction(normal);
+	@include animation-timing-function($ease-out-circ);
+	@include animation-duration(15s);
+}
+
+@include keyframes(animateContent) {
+	0% {
+		opacity: 0;
+		@include transform(translateY(30px));
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		@include transform(translateY(0px));
+	}
+
 }
 
 hr {
@@ -135,11 +176,24 @@ hr {
 	width: 50%;
 }
 
+a {
+	text-decoration: none;
+}
+
+.header {
+	width: 50%;
+}
+
+.centerText {
+	position: relative;
+	top: 30%;
+	transform: translateY(-35%);
+}
+
 #badge {
-	background-color: #0F2539;
+	background-color: rgba(15, 37, 57, 0);
 	@include transition (all 2s ease-out);
 	@include transition-timing-function($ease-out-circ);
-	width: 50%;
 }
 
 #badge:hover {
@@ -217,4 +271,9 @@ $neo-color: white;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
 	background-color: $neo-color;
+}
+
+#home {
+	background-color: $highlight-blue;
+	color: white;
 }

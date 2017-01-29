@@ -1,5 +1,4 @@
 body {
-  background-color: #0F2539;
   padding: 0px 10px;
   margin: 0px 1vw 0px 1vw;
   border-left: 2px solid #0060BF;
@@ -27,7 +26,6 @@ header {
 /*Tablet*/
 @media only screen and (min-width: 500px) {
   body {
-    background-color: #0F2539;
     padding: 0px 50px;
     margin: 0px 10vw 0px 10vw;
     border-left: 2px solid #0060BF;
@@ -54,7 +52,6 @@ header {
 /*Desktop*/
 @media only screen and (min-width: 1000px) {
   body {
-    background-color: #0F2539;
     padding: 0px 50px;
     margin: 0px 25vw 0px 25vw;
     border-left: 2px solid #0060BF;
@@ -78,6 +75,42 @@ header {
     height: 8vw;
     width: 100%;
     display: inline-block; } }
+body {
+  background: #0F2539 url("/Images/diamond.png") repeat 0 0;
+  -webkit-animation-name: moveBg;
+  -moz-animation-name: moveBg;
+  animation-name: moveBg;
+  -webkit-animation-duration: 50s;
+  -moz-animation-duration: 50s;
+  animation-duration: 50s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+@-webkit-keyframes moveBg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 100%; } }
+@-moz-keyframes moveBg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 100%; } }
+@keyframes moveBg {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 100%; } }
 .blue {
   color: #0060BF; }
 
@@ -86,22 +119,79 @@ header {
 
 .content {
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  -webkit-animation-name: animateContent;
+  -moz-animation-name: animateContent;
+  animation-name: animateContent;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  animation-duration: 15s; }
 
+@-webkit-keyframes animateContent {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px); }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px); } }
+@-moz-keyframes animateContent {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(30px); }
+  50% {
+    opacity: 1; }
+  100% {
+    -moz-transform: translateY(0px); } }
+@keyframes animateContent {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px); }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px); } }
 hr {
   margin-top: 2em;
   border-top: 1px solid dark-gray;
   width: 50%; }
 
+a {
+  text-decoration: none; }
+
+.header {
+  width: 50%; }
+
+.centerText {
+  position: relative;
+  top: 30%;
+  transform: translateY(-35%); }
+
 #badge {
-  background-color: #0F2539;
+  background-color: rgba(15, 37, 57, 0);
   -webkit-transition: all 2s ease-out;
   -moz-transition: all 2s ease-out;
   transition: all 2s ease-out;
   -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   -moz-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  width: 50%; }
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
 
 #badge:hover {
   -webkit-transform: scale(1.09);
@@ -185,5 +275,9 @@ hr {
   background-repeat: no-repeat;
   background-size: 50% auto;
   background-color: white; }
+
+#home {
+  background-color: #0060BF;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
