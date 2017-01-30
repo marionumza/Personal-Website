@@ -76,7 +76,7 @@ header {
     width: 100%;
     display: inline-block; } }
 body {
-  background: #0F2539 url("/Images/diamond.png") repeat 0 0;
+  background: #0F2539 url("/Images/diamond-web.png") repeat 0 0;
   -webkit-animation-name: moveBg;
   -moz-animation-name: moveBg;
   animation-name: moveBg;
