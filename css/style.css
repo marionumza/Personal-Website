@@ -248,6 +248,10 @@ a {
   background-size: 50% auto;
   background-color: #252F3D; }
 
+.contact {
+  color: white;
+  margin: 1em; }
+
 #journaley {
   background-image: url("/Images/journaley.png");
   background-position: center, center;
