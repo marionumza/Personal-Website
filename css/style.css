@@ -76,7 +76,7 @@ header {
     width: 100%;
     display: inline-block; } }
 body {
-  background: #0F2539 url("/Images/diamond-web.png") repeat 0 0;
+  background: #0F2539 url("../Images/diamond-web.png") repeat 0 0;
   -webkit-animation-name: moveBg;
   -moz-animation-name: moveBg;
   animation-name: moveBg;
@@ -241,13 +241,6 @@ a {
   -o-transform: scale(0.95);
   transform: scale(0.95); }
 
-#aurora {
-  background-image: url("/Images/aurora.png");
-  background-position: center, center;
-  background-repeat: no-repeat;
-  background-size: 50% auto;
-  background-color: #252F3D; }
-
 .contact {
   color: white;
   margin: 1em;
@@ -274,29 +267,36 @@ a {
   -o-transform: scale(1);
   transform: scale(1); }
 
+#aurora {
+  background-image: url("../Images/aurora.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-color: #252F3D; }
+
 #journaley {
-  background-image: url("/Images/journaley.png");
+  background-image: url("../Images/journaley.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: 50% auto;
   background-color: #191919; }
 
 #icarus {
-  background-image: url("/Images/icarus.png");
+  background-image: url("../Images/icarus.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: 50% auto;
   background-color: #2A2A2A; }
 
 #peruse {
-  background-image: url("/Images/Peruse.png");
+  background-image: url("../Images/Peruse.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: 50% auto;
   background-color: #FFF1C2; }
 
 #neo {
-  background-image: url("/Images/neo.png");
+  background-image: url("../Images/neo.png");
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: 50% auto;
