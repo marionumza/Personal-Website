@@ -2,8 +2,7 @@
 $black-blue: #0A1622;
 $light-blue: #0F2539;
 $highlight-blue: #0060BF;
-$background-url: "Images/diamond-web.png";
-
+$background-url: "../Images/diamond-web.png";
 // Phone
 $body-padding: 10px;
 $row-height: 90px;
@@ -234,14 +233,6 @@ $neo-color: white;
 	@include transform(scale(0.95));
 }
 
-#aurora {
-	background-image: url("/Images/aurora.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $aurora-color;
-}
-
 .contact {
 	color: white;
 	@include margin(1em);
@@ -259,8 +250,16 @@ $neo-color: white;
 	@include transform(scale(1));
 }
 
+#aurora {
+	background-image: url("../Images/aurora.png");
+	background-position: center, center;
+	background-repeat: no-repeat;
+	background-size: 50% auto;
+	background-color: $aurora-color;
+}
+
 #journaley {
-	background-image: url("Images/journaley.png");
+	background-image: url("../Images/journaley.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -268,7 +267,7 @@ $neo-color: white;
 }
 
 #icarus {
-	background-image: url("Images/icarus.png");
+	background-image: url("../Images/icarus.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -276,7 +275,7 @@ $neo-color: white;
 }
 
 #peruse {
-	background-image: url("Images/Peruse.png");
+	background-image: url("../Images/Peruse.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -284,7 +283,7 @@ $neo-color: white;
 }
 
 #neo {
-	background-image: url("Images/neo.png");
+	background-image: url("../Images/neo.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
