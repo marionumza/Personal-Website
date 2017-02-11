@@ -26,7 +26,7 @@ header {
 .item {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 10px;
-	font-size: 5vw;
+	font-size: 6.5vw;
 	color: #F4F4F5;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -118,7 +118,7 @@ header {
 body {
 	background: $light-blue url($background-url) repeat 0 0;
 	@include animation-name(moveBg);
-	@include animation-duration(50s);
+	@include animation-duration(100s);
 	@include animation-timing-function(linear);
 	@include animation-iteration-count(infinite);
 	@include animation-direction(normal);
@@ -179,8 +179,6 @@ hr {
 a {
 	text-decoration: none;
 }
-
-
 
 .header {
 	width: 50%;
@@ -243,9 +241,21 @@ $neo-color: white;
 	background-color: $aurora-color;
 }
 
-.contact{
+.contact {
 	color: white;
 	@include margin(1em);
+	@include transition (all 1.5s ease-out);
+	@include transition-timing-function($ease-out-circ);
+}
+
+.contact:hover {
+	color: $highlight-blue;
+	@include transform(scale(1.5));
+}
+
+.contact:active {
+	color: white;
+	@include transform(scale(1));
 }
 
 #journaley {

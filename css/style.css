@@ -13,7 +13,7 @@ header {
 .item {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 10px;
-  font-size: 5vw;
+  font-size: 6.5vw;
   color: #F4F4F5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
@@ -80,9 +80,9 @@ body {
   -webkit-animation-name: moveBg;
   -moz-animation-name: moveBg;
   animation-name: moveBg;
-  -webkit-animation-duration: 50s;
-  -moz-animation-duration: 50s;
-  animation-duration: 50s;
+  -webkit-animation-duration: 100s;
+  -moz-animation-duration: 100s;
+  animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -250,7 +250,29 @@ a {
 
 .contact {
   color: white;
-  margin: 1em; }
+  margin: 1em;
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.contact:hover {
+  color: #0060BF;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5); }
+
+.contact:active {
+  color: white;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
 
 #journaley {
   background-image: url("/Images/journaley.png");
