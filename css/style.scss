@@ -2,7 +2,8 @@
 $black-blue: #0A1622;
 $light-blue: #0F2539;
 $highlight-blue: #0060BF;
-$background-url: "/Images/diamond-web.png";
+$background-url: "Images/diamond-web.png";
+
 // Phone
 $body-padding: 10px;
 $row-height: 90px;
@@ -259,7 +260,7 @@ $neo-color: white;
 }
 
 #journaley {
-	background-image: url("/Images/journaley.png");
+	background-image: url("Images/journaley.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -267,7 +268,7 @@ $neo-color: white;
 }
 
 #icarus {
-	background-image: url("/Images/icarus.png");
+	background-image: url("Images/icarus.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -275,7 +276,7 @@ $neo-color: white;
 }
 
 #peruse {
-	background-image: url("/Images/Peruse.png");
+	background-image: url("Images/Peruse.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
@@ -283,7 +284,7 @@ $neo-color: white;
 }
 
 #neo {
-	background-image: url("/Images/neo.png");
+	background-image: url("Images/neo.png");
 	background-position: center, center;
 	background-repeat: no-repeat;
 	background-size: 50% auto;
