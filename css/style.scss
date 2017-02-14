@@ -4,7 +4,7 @@ $light-blue: #0F2539;
 $highlight-blue: #0060BF;
 $background-url: "../Images/diamond-web.png";
 // Phone
-$body-padding: 10px;
+$body-padding: 0px;
 $row-height: 90px;
 $row-bottom-margin: 1em;
 $header-height: 15em;
@@ -12,8 +12,6 @@ $header-height: 15em;
 body {
 	padding: 0px $body-padding;
 	margin: 0px 1vw 0px 1vw;
-	border-left: 2px solid $highlight-blue;
-	border-right: 2px solid $highlight-blue;
 }
 
 header {
@@ -40,7 +38,7 @@ header {
 
 /*Tablet*/
 @media only screen and (min-width:500px) {
-	$body-padding: 50px;
+	$body-padding: 0px;
 	$row-height: 120px;
 	$row-bottom-margin: 2em;
 	$header-height: 15em;
@@ -48,8 +46,6 @@ header {
 	body {
 		padding: 0px $body-padding;
 		margin: 0px 10vw 0px 10vw;
-		border-left: 2px solid $highlight-blue;
-		border-right: 2px solid $highlight-blue;
 	}
 
 	header {
@@ -78,7 +74,7 @@ header {
 
 /*Desktop*/
 @media only screen and (min-width:1000px) {
-	$body-padding: 50px;
+	$body-padding: 0px;
 	$row-height: 8vw;
 	$row-bottom-margin: 2em;
 	$header-height: 20vmax;
@@ -86,8 +82,6 @@ header {
 	body {
 		padding: 0px $body-padding;
 		margin: 0px 25vw 0px 25vw;
-		border-left: 2px solid $highlight-blue;
-		border-right: 2px solid $highlight-blue;
 	}
 
 	header {
@@ -145,6 +139,8 @@ body {
 }
 
 .content {
+	border-left: 2px solid $highlight-blue;
+	border-right: 2px solid $highlight-blue;
 	text-align: center;
 	margin: auto;
 	@include animation-name(animateContent);
@@ -158,16 +154,26 @@ body {
 	0% {
 		opacity: 0;
 		@include transform(translateY(30px));
+		border-left: 2px solid transparent;
+		border-right: 2px solid transparent;
 	}
 
 	50% {
 		opacity: 1;
+		
 	}
 
 	100% {
 		@include transform(translateY(0px));
+		border-left: 2px solid $highlight-blue;
+		border-right: 2px solid $highlight-blue;
 	}
 
+}
+
+center {
+	width: 100%;
+	text-align: center;
 }
 
 hr {
@@ -220,7 +226,9 @@ $neo-color: white;
 	@include transition (all 1.5s ease-out);
 	@include transition-timing-function($ease-out-circ);
 	border: 1px solid black;
+	box-sizing: border-box;
 	width: 100%;
+	margin-bottom: $row-bottom-margin;
 }
 
 .button:hover {
