@@ -5,7 +5,7 @@ $highlight-blue: #0060BF;
 $background-url: "../Images/diamond-web.png";
 // Phone
 $body-padding: 0px;
-$row-height: 90px;
+$row-height: 100px;
 $row-bottom-margin: 1em;
 $header-height: 15em;
 
@@ -39,7 +39,7 @@ header {
 /*Tablet*/
 @media only screen and (min-width:500px) {
 	$body-padding: 0px;
-	$row-height: 120px;
+	$row-height: 135px;
 	$row-bottom-margin: 2em;
 	$header-height: 15em;
 
@@ -75,7 +75,7 @@ header {
 /*Desktop*/
 @media only screen and (min-width:1000px) {
 	$body-padding: 0px;
-	$row-height: 8vw;
+	$row-height: 9vw;
 	$row-bottom-margin: 2em;
 	$header-height: 20vmax;
 
@@ -160,7 +160,6 @@ body {
 
 	50% {
 		opacity: 1;
-		
 	}
 
 	100% {
@@ -184,10 +183,42 @@ hr {
 
 a {
 	text-decoration: none;
+	color: teal;
+}
+
+a:hover {
+	color: $highlight-blue;
+}
+
+.text{
+	margin-bottom: 1.5em;
+	height: auto;
+}
+
+.text img {
+	text-align: center;
+	width: 85%;
+	height: auto;
+}
+
+.text h2 {
+	text-align: center;
+	color: white;
+	font-size: 35px;
+	font-family: Hind;
+}
+
+.text p {
+	text-align: left;
+	color: white;
+	font-size: 25px;
+	font-family: Hind;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .header {
-	width: 50%;
+	width: 70%;
 }
 
 .centerText {

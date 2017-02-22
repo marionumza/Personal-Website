@@ -17,7 +17,7 @@ header {
 
 .row {
   margin-bottom: 1em;
-  height: 90px;
+  height: 100px;
   width: 100%;
   display: inline-block; }
 
@@ -42,7 +42,7 @@ header {
 
   .row {
     margin-bottom: 2em;
-    height: 120px;
+    height: 135px;
     width: 100%;
     display: inline-block; } }
 /*Desktop*/
@@ -66,7 +66,7 @@ header {
 
   .row {
     margin-bottom: 2em;
-    height: 8vw;
+    height: 9vw;
     width: 100%;
     display: inline-block; } }
 body {
@@ -186,10 +186,37 @@ hr {
   width: 50%; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: teal; }
+
+a:hover {
+  color: #0060BF; }
+
+.text {
+  margin-bottom: 1.5em;
+  height: auto; }
+
+.text img {
+  text-align: center;
+  width: 85%;
+  height: auto; }
+
+.text h2 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: Hind; }
+
+.text p {
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  font-family: Hind;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .header {
-  width: 50%; }
+  width: 70%; }
 
 .centerText {
   position: relative;

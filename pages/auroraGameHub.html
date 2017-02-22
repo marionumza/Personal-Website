@@ -4,7 +4,8 @@
 		<meta name="viewport"content="width=device-width"/>
 		<link rel="stylesheet"href="/css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Hind|Josefin+Sans:400"rel="stylesheet">
-		<link rel="stylesheet"href="Images/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/Images/font-awesome/css/font-awesome.min.css">
+		<script src="/lib/zooming/build/zooming.min.js"></script>
 		<title>Sammy Guergachi - Aurora Game Hub</title>
 	</head>
 	<body>
@@ -12,16 +13,41 @@
 			<header >
 				<img class="header"src="/Images/AuroraLogo.png">
 			</header>
-			<div class ="item row">Aurora Game Hub is a project I spent 5 years of my free time devoted to</div>
-			<div class ="item row"> </div>
+			<div class ="item row">Aurora Game Hub was my software design playground</div>
+			<div class ="text row">
+				<h2><a id="The_Idea_2"></a>The Idea</h2>
+				<p>Aurora Game Hub was a project I started in August 2010, the summer before grade 12 high school. I remember knowing just enough Java to be able to make something cool.</p>
+				<p>The problem I wanted to tackle was one I felt very passionately about at the time. Being a gamer and deeply interested in user interface/user experience development, I was keenly aware of a problem PC gamers faced that Console gamers didn’t. At the time I had an Xbox 360, and loved the experience around the console game, from the point of putting a disc in to the console and instantly being able to play a game, to the sleek integration of the Xbox dashboard. I wanted something like that for PC gamers.</p>
+				<p>[Image of Xbox 360 Dashboard]</p>
+				<p>I was angry, because the PC was more powerful than any console at the time and subjectively had great games on the platform, my view was the only thing missing was creating some sort of immersive experience where gamers could launch one application and have access to all things gaming without worrying about all the other stuff the PC did. The PC can do many things and because of that you get a very fractured experience where the way you play or access your games is the same as the way you access or open a PDF document. The other issue was that you had to use so many different applications from different digital distributors to play your various games.</p>
+				<p>[Image of PC Gamer Desktop]</p>
+				<p>My philosophy to side projects has primarily been to do something that hasn’t already been done already or done well enough. I’m not interested in putting a lot of work to make something marginally better than a competing product. So I make sure to put a lot of time into searching and analyzing competing services. Because to be honest, I much rather use someone else’s product which solves a problem I’m facing <em>good enough</em> than build something that is no more of a remix of a well made competing product. In this case the competition was miserable. There was nothing that could figure out this problem.</p>
+				<p>Most services that did something like this focused more around a social component. Whether it be a chat service, a gaming social network, they all had the ability to launch and manage your games library but none had it nailed down. Examples of these services/tools include Xfire, Raptr, and Curse. You also had digital distribution platforms like Steam and Origin, but the had a poor to no ability to add game’s that weren’t sold in their stores. My aim was to focus on the common denominator and do a good job at managing all your games, regardless of where you got it from. I also wanted no social features to start with, from my personal experience these social features have already been done well enough by many companies, not something I had any interest in.</p>
+				<p>Tackling this problem wasn’t my only goal. I really wanted to experiment with UI and UX design. I had so many ideas of un-conventional UIs that I wanted to see come alive. The accumulation of all these little UI details is really why I love this project so much.</p>
+				<h2><a id="Rev_09_19"></a>Rev 09</h2>
+				<p>The first build of Aurora released did nothing but show a loading screen. The same summer I started working on Aurora, I had decided to open source my project and use Source Forge as the host of my svn repository to manage my code. I released <a href="https://sourceforge.net/projects/auroragm/files/Aurora%20V1/">revision 9</a> as the first version of Aurora available to run. All that happened when you ran it was see a full screen window with a loop of green hexagons slowly moving horizontally. You saw the logo at the top and a spinning progress wheel at the bottom with messages that would slide and fade in and out of view.</p>
+				<img src="/Images/Aurora/image1.png" data-action="zoom" data-original="/Images/Aurora/image1.png"/>
+				<p>On the surface, it seemed like nothing, but a lot of decisions I had made in this first, unusable, version was carried on until the very end.</p>
+				<p>First of all, the layout of this screen was inspired by a game I used to play called EVE Online. I loved the login screens in that game, it felt very sci-fi without feeling unnecessarily gaudy. The subtle sci-fi music in the background and the idle animation in the center really wowed me. With each expansion of EVE a new animation and theme song would greet you on login. A lot of other people were fans of this login screen by the looks of a search on <a href="https://www.youtube.com/results?search_query=eve+login+screen">youtube</a>.</p>
+				<p>[Image of Eve Login Screen]</p>
+				<p>I didn’t have the ability to make an idle animation with as much fidelity as EVE did, so I settled for a simple horizontally moving animation of green hexagons. Why green hexagons? Because hexagons are the coolest shape. These green hexagons later lead me to build the piece of UI I am most proud of in this project.</p>
+				<p>The animated login text was inspired by the Office 2010 splash screen. I had never seen text being presented in that way anywhere else. It was a really digestible and nice way of delivering segmented pieces of information to the user. This component was reused many times throughout the project.</p>
+				<p>[<a href="https://www.youtube.com/watch?v=160xBNUyMrg&amp;ab_channel=daSmirnov">https: //www.youtube.com/watch?v=160xBNUyMrg&amp;
+				ab_channel=daSmirnov</a>]</p>
+				<p>The last important thing I had done was a bit more philosophical. I was convinced that what made applications boring and unattractive was how static they were. I realize now with maturity that this philosophy was shortsighted, but it resulted in some interesting experiments. My goal was to make Aurora dynamic in subtle ways. The way I did this was to randomly pick different strings of text to use for the same message. So for example if I wanted to say “welcome” to the user, I would randomly pick from “hello” and “greetings” as possible synonyms to send the same message. This system was later extended to support me dynamically changing the dictionary of synonyms to support seasonal or holiday messages which would be dynamically updated in the background. I tried to apply this dynamic messaging everywhere I could, but I soon realized later in development it wasn’t very scalable for me to write variations of each message we needed to display to the user.</p>
+				<h2><a id="A_Partner_39"></a>A Partner</h2>
+				<p>In 2011 I had gone to University. By then I had done a lot more work on Aurora. Most notably I had implemented the dashboard UI, the info bar which would later turn into a live news ticker for PC gaming news, and the foundation of what would become the game library. But the most important thing to happen that year for the project was when I met Carlos online.</p>
+				<p>I had decided that I needed a partner if I was going to really turn this UI playground into something really functional in a realistic timeline. It turns out SourceForge had a form dedicated to “job” postings for open source projects on the site. It was a really great way to get exposure on this project. I got a bunch of replies, most of which went nowhere. I made sure to convey to the few promising candidates how passionate I was about the project and made it clear I was looking for a “creative programmer”, which was my way of saying someone who has good programing skills but also had the taste to appreciate my focus on the immersive UI design I was envisioning for the project.</p>
+				<p>One person who ended up being a partner on the project for years since was Carlos. Someone who I found out happened to live in a city called Aurora near me which was quite the coincidence. In this case Carlos was a huge help to me, and I will forever be grateful to him. I have never met Carlos in person, but he’s been like a friend to me.</p>
+			</div>
 			<div class ="item row"> Here are <em>other</em> projects I worked on
 				<br>
 				<hr>
 			</div>
 			<a href="/pages/journaley.html"class ="row button"id="journaley"></a>
-			<a href="/pages/icarus.html" class ="row button"id="icarus">			</a>
-			<a href="/pages/peruse.html" class ="row button"id="peruse">			</a>
-			<a href="/pages/neo.html" class ="row button"id="neo">			</a>
+			<a href="/pages/icarus.html"class ="row button"id="icarus">			</a>
+			<a href="/pages/peruse.html"class ="row button"id="peruse">			</a>
+			<a href="/pages/neo.html"class ="row button"id="neo">			</a>
 			<hr>
 			<br>
 			<a href="/index.html"class ="row button item"id="home"><span class="centerText"><i class="fa fa-chevron-left"aria-hidden="true"></i>	Home</span></a>
