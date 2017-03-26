@@ -185,6 +185,14 @@ hr {
   border-top: 1px solid dark-gray;
   width: 50%; }
 
+.header {
+  width: 70%; }
+
+.centerText {
+  position: relative;
+  top: 30%;
+  transform: translateY(-35%); }
+
 a {
   text-decoration: none;
   color: teal; }
@@ -198,7 +206,7 @@ a:hover {
 
 .text img {
   text-align: center;
-  width: 85%;
+  width: 100%;
   height: auto; }
 
 .text h2 {
@@ -214,14 +222,6 @@ a:hover {
   font-family: Hind;
   margin-left: 10px;
   margin-right: 10px; }
-
-.header {
-  width: 70%; }
-
-.centerText {
-  position: relative;
-  top: 30%;
-  transform: translateY(-35%); }
 
 #badge {
   background-color: rgba(15, 37, 57, 0);

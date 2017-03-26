@@ -108,7 +108,7 @@ header {
 
 }
 
-// Global
+// GLOBAL
 body {
 	background: $light-blue url($background-url) repeat 0 0;
 	@include animation-name(moveBg);
@@ -181,6 +181,17 @@ hr {
 	width: 50%;
 }
 
+.header {
+	width: 70%;
+}
+
+.centerText {
+	position: relative;
+	top: 30%;
+	transform: translateY(-35%);
+}
+
+// LINKS
 a {
 	text-decoration: none;
 	color: teal;
@@ -190,14 +201,15 @@ a:hover {
 	color: $highlight-blue;
 }
 
-.text{
+// TEXT BODY
+.text {
 	margin-bottom: 1.5em;
 	height: auto;
 }
 
 .text img {
 	text-align: center;
-	width: 85%;
+	width: 100%;
 	height: auto;
 }
 
@@ -217,16 +229,7 @@ a:hover {
 	margin-right: 10px;
 }
 
-.header {
-	width: 70%;
-}
-
-.centerText {
-	position: relative;
-	top: 30%;
-	transform: translateY(-35%);
-}
-
+// BADGE
 #badge {
 	background-color: rgba(15, 37, 57, 0);
 	@include transition (all 2s ease-out);
@@ -247,12 +250,7 @@ a:hover {
 	border: 1px solid black;
 }
 
-$aurora-color: #252F3D;
-$journaley-color: #191919;
-$icarus-color: #2A2A2A;
-$peruse-color: #FFF1C2;
-$neo-color: white;
-
+// CONTACT BUTTONS
 .button {
 	@include transition (all 1.5s ease-out);
 	@include transition-timing-function($ease-out-circ);
@@ -288,6 +286,13 @@ $neo-color: white;
 	color: white;
 	@include transform(scale(1));
 }
+
+// PROJECT BUTTONS
+$aurora-color: #252F3D;
+$journaley-color: #191919;
+$icarus-color: #2A2A2A;
+$peruse-color: #FFF1C2;
+$neo-color: white;
 
 #aurora {
 	background-image: url("../Images/aurora.png");
