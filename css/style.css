@@ -71,12 +71,9 @@ header {
     display: inline-block; } }
 body {
   background: #0F2539 url("../Images/diamond-web.png") repeat 0 0;
-  -webkit-animation-name: moveBg;
-  -moz-animation-name: moveBg;
-  animation-name: moveBg;
-  -webkit-animation-duration: 100s;
-  -moz-animation-duration: 100s;
-  animation-duration: 100s;
+  -webkit-animation-duration: 200s;
+  -moz-animation-duration: 200s;
+  animation-duration: 200s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -128,9 +125,9 @@ body {
   -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   -moz-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  -webkit-animation-duration: 15s;
-  -moz-animation-duration: 15s;
-  animation-duration: 15s; }
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s; }
 
 @-webkit-keyframes animateContent {
   0% {
@@ -213,9 +210,10 @@ a:hover {
   height: auto; }
 
 .text h2 {
-  text-align: center;
+  margin-left: 10px;
+  text-align: left;
   color: white;
-  font-size: 35px;
+  font-size: 45px;
   font-family: Hind; }
 
 .text p {

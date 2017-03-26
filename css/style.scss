@@ -111,8 +111,8 @@ header {
 // GLOBAL
 body {
 	background: $light-blue url($background-url) repeat 0 0;
-	@include animation-name(moveBg);
-	@include animation-duration(100s);
+	// @include animation-name(moveBg);
+	@include animation-duration(200s);
 	@include animation-timing-function(linear);
 	@include animation-iteration-count(infinite);
 	@include animation-direction(normal);
@@ -139,6 +139,7 @@ body {
 }
 
 .content {
+	// background-color: $black-blue;
 	border-left: 2px solid $highlight-blue;
 	border-right: 2px solid $highlight-blue;
 	text-align: center;
@@ -147,7 +148,7 @@ body {
 	@include animation-iteration-count(1);
 	@include animation-direction(normal);
 	@include animation-timing-function($ease-out-circ);
-	@include animation-duration(15s);
+	@include animation-duration(5s);
 }
 
 @include keyframes(animateContent) {
@@ -218,9 +219,10 @@ a:hover {
 }
 
 .text h2 {
-	text-align: center;
+	margin-left: 10px;
+	text-align: left;
 	color: white;
-	font-size: 35px;
+	font-size: 45px;
 	font-family: Hind;
 }
 
