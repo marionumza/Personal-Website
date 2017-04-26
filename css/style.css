@@ -2,6 +2,9 @@ body {
   padding: 0px 0px;
   margin: 0px 1vw 0px 1vw; }
 
+#title {
+  font-size: 3em; }
+
 header {
   padding-top: 3em;
   height: 15em;
@@ -197,8 +200,18 @@ center {
   width: 100%;
   text-align: center; }
 
-.fa {
-  padding: 0px 40px 0px 0px; }
+.fa-2x {
+  margin: 0px 10px 0px 10px; }
+
+i.fa.fa-circle {
+  margin: 0px 5px 0px 5px;
+  font-size: 10px;
+  vertical-align: middle; }
+
+i.fa.fa-chevron-left {
+  margin: 0px 5px 0.3em 5px;
+  font-size: 0.7em;
+  vertical-align: middle; }
 
 hr {
   margin-top: 2em;
@@ -318,19 +331,19 @@ a:hover {
 
 .contact:hover {
   color: #0060BF;
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  transform: scale(1.5); }
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
 
 .contact:active {
   color: white;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9); }
 
 #aurora {
   background-image: url("../Images/aurora.png");
