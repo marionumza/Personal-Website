@@ -87,7 +87,7 @@ header {
 	$body-padding: 0px;
 	$row-height: 9vw;
 	$row-bottom-margin: 2em;
-	$header-height: 20vmax;
+	$header-height: 25vmax;
 
 	body {
 		padding: 0px $body-padding;
@@ -96,7 +96,7 @@ header {
 
 	header {
 		padding-top: 3em;
-		padding-bottom: 0.5vw;
+		padding-bottom: 1vw;
 		height: $header-height;
 		display: inline-block;
 	}
@@ -127,11 +127,15 @@ header {
 body {
 	background: $light-blue url($background-url) repeat 0 0;
 	// @include animation-name(moveBg);
-	@include animation-duration(200s);
+	@include animation-duration(100s);
 	@include animation-timing-function(linear);
 	@include animation-iteration-count(infinite);
 	@include animation-direction(normal);
 	@include transition (all 2s $ease-out-circ);
+}
+
+header {
+	height: 100%;
 }
 
 .item {
@@ -168,13 +172,13 @@ body {
 	@include animation-iteration-count(1);
 	@include animation-direction(normal);
 	@include animation-timing-function($ease-out-circ);
-	@include animation-duration(5s);
+	@include animation-duration(1s);
 }
 
 @include keyframes(animateContent) {
 	0% {
 		opacity: 0;
-		@include transform(translateY(30px));
+		@include transform(translateY(20px));
 		border-left: 2px solid transparent;
 		border-right: 2px solid transparent;
 	}
@@ -261,17 +265,20 @@ a:hover {
 	background-color: rgba(15, 37, 57, 0);
 	@include transition (all 2s ease-out);
 	@include transition-timing-function($ease-out-circ);
+	border: 1px solid $light-blue;
+	border-radius: 5px;
 }
 
 #badge:hover {
-	@include transform(scale(1.09));
+	@include transform(scale(1.05));
 	@include background(linear-gradient($light-blue, $black-blue));
 	border-radius: 5px;
+	border: 1px solid $black-blue;
 	box-shadow: 1px 2px 10px 3px black;
 }
 
 #badge:active {
-	@include transform(scale(1));
+	@include transform(scale(0.99));
 	@include background(linear-gradient($black-blue, $light-blue));
 	box-shadow: none;
 	border: 1px solid black;

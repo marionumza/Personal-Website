@@ -61,8 +61,8 @@ header {
 
   header {
     padding-top: 3em;
-    padding-bottom: 0.5vw;
-    height: 20vmax;
+    padding-bottom: 1vw;
+    height: 25vmax;
     display: inline-block; }
 
   .item {
@@ -83,9 +83,9 @@ header {
     display: inline-block; } }
 body {
   background: #0F2539 url("../Images/diamond-web.png") repeat 0 0;
-  -webkit-animation-duration: 200s;
-  -moz-animation-duration: 200s;
-  animation-duration: 200s;
+  -webkit-animation-duration: 100s;
+  -moz-animation-duration: 100s;
+  animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -98,6 +98,9 @@ body {
   -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   -moz-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+header {
+  height: 100%; }
 
 .item {
   color: #F4F4F5;
@@ -142,14 +145,14 @@ body {
   -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   -moz-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  -webkit-animation-duration: 5s;
-  -moz-animation-duration: 5s;
-  animation-duration: 5s; }
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
 
 @-webkit-keyframes animateContent {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
+    -webkit-transform: translateY(20px);
     border-left: 2px solid transparent;
     border-right: 2px solid transparent; }
   50% {
@@ -161,7 +164,7 @@ body {
 @-moz-keyframes animateContent {
   0% {
     opacity: 0;
-    -moz-transform: translateY(30px);
+    -moz-transform: translateY(20px);
     border-left: 2px solid transparent;
     border-right: 2px solid transparent; }
   50% {
@@ -173,11 +176,11 @@ body {
 @keyframes animateContent {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
     border-left: 2px solid transparent;
     border-right: 2px solid transparent; }
   50% {
@@ -248,25 +251,28 @@ a:hover {
   transition: all 2s ease-out;
   -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   -moz-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); }
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid #0F2539;
+  border-radius: 5px; }
 
 #badge:hover {
-  -webkit-transform: scale(1.09);
-  -moz-transform: scale(1.09);
-  -ms-transform: scale(1.09);
-  -o-transform: scale(1.09);
-  transform: scale(1.09);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
   background: -webkit-linear-gradient(#0F2539, #0A1622);
   background: linear-gradient(#0F2539, #0A1622);
   border-radius: 5px;
+  border: 1px solid #0A1622;
   box-shadow: 1px 2px 10px 3px black; }
 
 #badge:active {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+  transform: scale(0.99);
   background: -webkit-linear-gradient(#0A1622, #0F2539);
   background: linear-gradient(#0A1622, #0F2539);
   box-shadow: none;
