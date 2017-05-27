@@ -8,333 +8,320 @@ $body-padding: 0px;
 $row-height: 100px;
 $row-bottom-margin: 1em;
 $header-height: 15em;
-
 body {
-	padding: 0px $body-padding;
-	margin: 0px 1vw 0px 1vw;
+    padding: 0px $body-padding;
+    margin: 0px 1vw 0px 1vw;
 }
 
 #title {
-	font-size: 3em;
+    font-size: 3em;
 }
 
 header {
-	padding-top: 3em;
-	height: $header-height;
-	padding-bottom: 2em;
-	display: inline-block;
+    padding-top: 3em;
+    height: $header-height;
+    padding-bottom: 2em;
+    display: inline-block;
 }
 
 .item {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 10px;
-	font-size: 6.5vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10px;
+    font-size: 6.5vw;
 }
 
 .row {
-	margin-bottom: $row-bottom-margin;
-	height: $row-height;
-	width: 100%;
-	display: inline-block;
+    margin-bottom: $row-bottom-margin;
+    height: $row-height;
+    width: 100%;
+    display: inline-block;
 }
 
 .half-row {
-	margin-bottom: $row-bottom-margin/2;
-	height: $row-height/2;
-	width: 100%;
-	display: inline-block;
+    margin-bottom: $row-bottom-margin/2;
+    height: $row-height/2;
+    width: 100%;
+    display: inline-block;
 }
+
 
 /*Tablet*/
+
 @media only screen and (min-width:500px) {
-	$body-padding: 0px;
-	$row-height: 135px;
-	$row-bottom-margin: 2em;
-	$header-height: 15em;
-
-	body {
-		padding: 0px $body-padding;
-		margin: 0px 10vw 0px 10vw;
-	}
-
-	header {
-		padding-top: 3em;
-		padding-bottom: 2em;
-		height: $header-height;
-		display: inline-block;
-	}
-
-	.item {
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 10px;
-		font-size: 5vw;
-	}
-
-	.row {
-		margin-bottom: $row-bottom-margin;
-		height: $row-height;
-		width: 100%;
-		display: inline-block;
-	}
-
-	.half-row {
-		margin-bottom: $row-bottom-margin/2;
-		height: $row-height/2;
-		width: 100%;
-		display: inline-block;
-	}
-
+    $body-padding: 0px;
+    $row-height: 135px;
+    $row-bottom-margin: 2em;
+    $header-height: 15em;
+    body {
+        padding: 0px $body-padding;
+        margin: 0px 10vw 0px 10vw;
+    }
+    header {
+        padding-top: 3em;
+        padding-bottom: 2em;
+        height: $header-height;
+        display: inline-block;
+    }
+    .item {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 10px;
+        font-size: 5vw;
+    }
+    .row {
+        margin-bottom: $row-bottom-margin;
+        height: $row-height;
+        width: 100%;
+        display: inline-block;
+    }
+    .half-row {
+        margin-bottom: $row-bottom-margin/2;
+        height: $row-height/2;
+        width: 100%;
+        display: inline-block;
+    }
 }
 
+
 /*Desktop*/
+
 @media only screen and (min-width:1000px) {
-	$body-padding: 0px;
-	$row-height: 9vw;
-	$row-bottom-margin: 2em;
-	$header-height: 25vmax;
-
-	body {
-		padding: 0px $body-padding;
-		margin: 0px 25vw 0px 25vw;
-	}
-
-	header {
-		padding-top: 3em;
-		padding-bottom: 1vw;
-		height: $header-height;
-		display: inline-block;
-	}
-
-	.item {
-		font-family: 'Josefin Sans', sans-serif;
-		font-size: 6em;
-		font-size: 2.9vw;
-	}
-
-	.row {
-		margin-bottom: $row-bottom-margin;
-		height: $row-height;
-		width: 100%;
-		display: inline-block;
-	}
-
-	.half-row {
-		margin-bottom: $row-bottom-margin/2;
-		height: $row-height/2;
-		width: 100%;
-		display: inline-block;
-	}
-
+    $body-padding: 0px;
+    $row-height: 9vw;
+    $row-bottom-margin: 2em;
+    $header-height: 25vmax;
+    body {
+        padding: 0px $body-padding;
+        margin: 0px 25vw 0px 25vw;
+    }
+    header {
+        padding-top: 3em;
+        padding-bottom: 1vw;
+        height: $header-height;
+        display: inline-block;
+    }
+    .item {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 6em;
+        font-size: 2.9vw;
+    }
+    .row {
+        margin-bottom: $row-bottom-margin;
+        height: $row-height;
+        width: 100%;
+        display: inline-block;
+    }
+    .half-row {
+        margin-bottom: $row-bottom-margin/2;
+        height: $row-height/2;
+        width: 100%;
+        display: inline-block;
+    }
 }
 
 // GLOBAL
 body {
-	background: $light-blue url($background-url) repeat 0 0;
-	// @include animation-name(moveBg);
-	@include animation-duration(100s);
-	@include animation-timing-function(linear);
-	@include animation-iteration-count(infinite);
-	@include animation-direction(normal);
-	@include transition (all 2s $ease-out-circ);
+    background: $light-blue url($background-url) repeat 0 0;
+    // @include animation-name(moveBg);
+    @include animation-duration(100s);
+    @include animation-timing-function(linear);
+    @include animation-iteration-count(infinite);
+    @include animation-direction(normal);
+    @include transition (all 2s $ease-out-circ);
 }
 
 header {
-	height: 100%;
+    height: 100%;
 }
 
 .item {
-	color: #F4F4F5;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.72);
+    color: #F4F4F5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 @include keyframes(moveBg) {
-	from {
-		background-position: 0 0;
-	}
-
-	to {
-		background-position: 0 100%;
-	}
-
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
 }
 
 .blue {
-	color: $highlight-blue;
+    color: $highlight-blue;
 }
 
 .white {
-	color: #F4F4F5;
+    color: #F4F4F5;
 }
 
 .content {
-	background-color: $light-blue;
-	border-left: 2px solid $highlight-blue;
-	border-right: 2px solid $highlight-blue;
-	text-align: center;
-	margin: auto;
-	@include animation-name(animateContent);
-	@include animation-iteration-count(1);
-	@include animation-direction(normal);
-	@include animation-timing-function($ease-out-circ);
-	@include animation-duration(1s);
+    background-color: $light-blue;
+    border-left: 2px solid $highlight-blue;
+    border-right: 2px solid $highlight-blue;
+    text-align: center;
+    margin: auto;
+    @include animation-name(animateContent);
+    @include animation-iteration-count(1);
+    @include animation-direction(normal);
+    @include animation-timing-function($ease-out-circ);
+    @include animation-duration(1s);
 }
 
 @include keyframes(animateContent) {
-	0% {
-		opacity: 0;
-		@include transform(translateY(20px));
-		border-left: 2px solid transparent;
-		border-right: 2px solid transparent;
-	}
-
-	50% {
-		opacity: 1;
-	}
-
-	100% {
-		@include transform(translateY(0px));
-		border-left: 2px solid $highlight-blue;
-		border-right: 2px solid $highlight-blue;
-	}
-
+    0% {
+        opacity: 0;
+        @include transform(translateY(20px));
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        @include transform(translateY(0px));
+        border-left: 2px solid $highlight-blue;
+        border-right: 2px solid $highlight-blue;
+    }
 }
 
 center {
-	width: 100%;
-	text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .fa-2x {
-	margin: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 i.fa.fa-circle {
-	margin: 0px 5px 0px 5px;
-	font-size: 10px;
-	vertical-align: middle;
+    margin: 0px 5px 0px 5px;
+    font-size: 10px;
+    vertical-align: middle;
 }
 
 i.fa.fa-chevron-left {
-	margin: 0px 5px 0.3em 5px;
-	font-size: 0.7em;
-	vertical-align: middle;
+    margin: 0px 5px 0.3em 5px;
+    font-size: 0.7em;
+    vertical-align: middle;
 }
 
 hr {
-	margin-top: 2em;
-	border-top: 1px solid dark-gray;
-	// width: 50%;
+    margin-top: 2em;
+    border-top: 1px solid dark-gray;
+    // width: 50%;
 }
 
 .header {
-	width: 70%;
+    width: 70%;
 }
 
 .centerText {
-	position: relative;
-	top: 30%;
-	transform: translateY(-35%);
+    position: relative;
+    top: 30%;
+    transform: translateY(-35%);
 }
 
 // LINKS
 a {
-	text-decoration: none;
-	color: teal;
+    text-decoration: none;
+    color: teal;
 }
 
 a:hover {
-	color: $highlight-blue;
+    color: $highlight-blue;
 }
 
 // TEXT BODY
 .text {
-	margin-bottom: 5.5em;
-	height: auto;
+    margin-bottom: 5.5em;
+    height: auto;
 }
 
 .text img {
-	text-align: center;
-	width: 100%;
-	height: auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .text h2 {
-	font-family: Hind;
-	margin-left: 25px;
-	text-align: left;
-	color: white;
-	font-size: 45px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.72);
+    font-family: Hind;
+    font-weight: 400;
+    margin-left: 25px;
+    text-align: left;
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.72);
 }
 
 .text p {
-	font-family: Hind;
-	text-align: left;
-	color: white;
-	font-size: 22px;
-	margin-left: 10px;
-	margin-right: 10px;
+    font-family: Hind;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 // BADGE
 #badge {
-	background-color: rgba(15, 37, 57, 0);
-	@include transition (all 2s ease-out);
-	@include transition-timing-function($ease-out-circ);
-	border: 1px solid $light-blue;
-	border-radius: 5px;
+    background-color: rgba(15, 37, 57, 0);
+    @include transition (all 2s ease-out);
+    @include transition-timing-function($ease-out-circ);
+    border: 1px solid $light-blue;
+    border-radius: 5px;
 }
 
 #badge:hover {
-	@include transform(scale(1.05));
-	@include background(linear-gradient($light-blue, $black-blue));
-	border-radius: 5px;
-	border: 1px solid $black-blue;
-	box-shadow: 1px 2px 10px 3px black;
+    @include transform(scale(1.05));
+    @include background(linear-gradient($light-blue, $black-blue));
+    border-radius: 5px;
+    border: 1px solid $black-blue;
+    box-shadow: 1px 2px 10px 3px black;
 }
 
 #badge:active {
-	@include transform(scale(0.99));
-	@include background(linear-gradient($black-blue, $light-blue));
-	box-shadow: none;
-	border: 1px solid black;
+    @include transform(scale(0.99));
+    @include background(linear-gradient($black-blue, $light-blue));
+    box-shadow: none;
+    border: 1px solid black;
 }
 
 // CONTACT BUTTONS
 .button {
-	@include transition (all 1.5s ease-out);
-	@include transition-timing-function($ease-out-circ);
-	border: 1px solid black;
-	box-sizing: border-box;
-	width: 100%;
-	margin-bottom: $row-bottom-margin;
+    @include transition (all 1.5s ease-out);
+    @include transition-timing-function($ease-out-circ);
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: $row-bottom-margin;
 }
 
 .button:hover {
-	box-shadow: 1px 2px 6px 1px black;
-	@include transform(scale(1.02));
+    box-shadow: 1px 2px 6px 1px black;
+    @include transform(scale(1.02));
 }
 
 .button:active {
-	box-shadow: 0px 0px 0px 1px black;
-	@include transform(scale(0.95));
+    box-shadow: 0px 0px 0px 1px black;
+    @include transform(scale(0.95));
 }
 
 .contact {
-	color: white;
-	@include margin(1em);
-	@include transition (all 1.5s ease-out);
-	@include transition-timing-function($ease-out-circ);
+    color: white;
+    @include margin(1em);
+    @include transition (all 1.5s ease-out);
+    @include transition-timing-function($ease-out-circ);
 }
 
 .contact:hover {
-	color: $highlight-blue;
-	@include transform(scale(1.2));
+    color: $highlight-blue;
+    @include transform(scale(1.2));
 }
 
 .contact:active {
-	color: white;
-	@include transform(scale(0.9));
+    color: white;
+    @include transform(scale(0.9));
 }
 
 // PROJECT BUTTONS
@@ -343,48 +330,47 @@ $journaley-color: #191919;
 $icarus-color: #2A2A2A;
 $peruse-color: #FFF1C2;
 $neo-color: white;
-
 #aurora {
-	background-image: url("../Images/aurora.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $aurora-color;
+    background-image: url("../Images/aurora.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $aurora-color;
 }
 
 #journaley {
-	background-image: url("../Images/journaley.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $journaley-color;
+    background-image: url("../Images/journaley.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $journaley-color;
 }
 
 #icarus {
-	background-image: url("../Images/Icarus.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $icarus-color;
+    background-image: url("../Images/Icarus.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $icarus-color;
 }
 
 #peruse {
-	background-image: url("../Images/Peruse.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $peruse-color;
+    background-image: url("../Images/Peruse.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $peruse-color;
 }
 
 #neo {
-	background-image: url("../Images/neo.png");
-	background-position: center, center;
-	background-repeat: no-repeat;
-	background-size: 50% auto;
-	background-color: $neo-color;
+    background-image: url("../Images/neo.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-color: $neo-color;
 }
 
 #home {
-	background-color: $highlight-blue;
-	color: white;
+    background-color: $highlight-blue;
+    color: white;
 }
